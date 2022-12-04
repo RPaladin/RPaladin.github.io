@@ -496,6 +496,8 @@
       <div class="d-flex container p-3 p-lg-5">
         <!-- YEARS -->
         <ul class="nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+          <!-- Year - 2023 -->
+          <li class="nav-item" role="presentation"><button id="y2023" class="y y2023 text-light nav-link" onclick='setYear("2023");' data-bs-toggle="pill" data-bs-target="#m2023" type="button" role="tab" aria-selected="false">2023</button></li>
           <!-- Year - 2022 -->
           <li class="nav-item" role="presentation"><button id="y2022" class="y y2022 text-light nav-link" onclick='setYear("2022");' data-bs-toggle="pill" data-bs-target="#m2022" type="button" role="tab" aria-selected="false">2022</button></li>
           <!-- Year - 2021 -->
@@ -504,39 +506,159 @@
         <div class="d-flex"><div class="vr mx-3"></div></div>
         <!-- MONTHS -->
         <div class="tab-content">
+          <!-- Months - 2023 -->
+          <div id="m2023" class="y y2023 tab-pane" role="tabpanel" tabindex="0">
+            <ul class="nav nav-outline nav-justified">
+              <li class="nav-item" role="presentation"><a id="m20" class="m text-light nav-link" href="#2023.01" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c20" type="button" role="tab" aria-controls="c20" aria-selected="false">2023.01</a></li>
+            </ul>
+          </div>
           <!-- Months - 2022 -->
           <div id="m2022" class="y y2022 tab-pane" role="tabpanel" tabindex="0">
             <ul class="nav nav-outline nav-justified" role="tablist">
-              <li class="nav-item" role="presentation"><button id="m19" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c19" type="button" role="tab" aria-controls="c19" aria-selected="false">2022.12</button></li>
-              <li class="nav-item" role="presentation"><button id="m18" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c18" type="button" role="tab" aria-controls="c18" aria-selected="false">2022.11</button></li>
-              <li class="nav-item" role="presentation"><button id="m17" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c17" type="button" role="tab" aria-controls="c17" aria-selected="false">2022.10</button></li>
-              <li class="nav-item" role="presentation"><button id="m16" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c16" type="button" role="tab" aria-controls="c16" aria-selected="false">2022.09</button></li>
-              <li class="nav-item" role="presentation"><button id="m15" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c15" type="button" role="tab" aria-controls="c15" aria-selected="false">2022.08</button></li>
-              <li class="nav-item" role="presentation"><button id="m14" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c14" type="button" role="tab" aria-controls="c14" aria-selected="false">2022.07</button></li>
-              <li class="nav-item" role="presentation"><button id="m13" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c13" type="button" role="tab" aria-controls="c13" aria-selected="false">2022.06</button></li>
-              <li class="nav-item" role="presentation"><button id="m12" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c12" type="button" role="tab" aria-controls="c12" aria-selected="false">2022.05</button></li>
-              <li class="nav-item" role="presentation"><button id="m11" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c11" type="button" role="tab" aria-controls="c11" aria-selected="false">2022.04</button></li>
-              <li class="nav-item" role="presentation"><button id="m10" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c10" type="button" role="tab" aria-controls="c10" aria-selected="false">2022.03</button></li>
-              <li class="nav-item" role="presentation"><button id="m9" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c9" type="button" role="tab" aria-controls="c9" aria-selected="false">2022.02</button></li>
-              <li class="nav-item" role="presentation"><button id="m8" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c8" type="button" role="tab" aria-controls="c8" aria-selected="false">2022.01</button></li>
+              <li class="nav-item" role="presentation"><a id="m19" class="m text-light nav-link" href="#2022.12" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c19" type="button" role="tab" aria-controls="c19" aria-selected="false">2022.12</a></li>
+              <li class="nav-item" role="presentation"><a id="m18" class="m text-light nav-link" href="#2022.11" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c18" type="button" role="tab" aria-controls="c18" aria-selected="false">2022.11</a></li>
+              <li class="nav-item" role="presentation"><a id="m17" class="m text-light nav-link" href="#2022.10" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c17" type="button" role="tab" aria-controls="c17" aria-selected="false">2022.10</a></li>
+              <li class="nav-item" role="presentation"><a id="m16" class="m text-light nav-link" href="#2022.09" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c16" type="button" role="tab" aria-controls="c16" aria-selected="false">2022.09</a></li>
+              <li class="nav-item" role="presentation"><a id="m15" class="m text-light nav-link" href="#2022.08" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c15" type="button" role="tab" aria-controls="c15" aria-selected="false">2022.08</a></li>
+              <li class="nav-item" role="presentation"><a id="m14" class="m text-light nav-link" href="#2022.07" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c14" type="button" role="tab" aria-controls="c14" aria-selected="false">2022.07</a></li>
+              <li class="nav-item" role="presentation"><a id="m13" class="m text-light nav-link" href="#2022.06" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c13" type="button" role="tab" aria-controls="c13" aria-selected="false">2022.06</a></li>
+              <li class="nav-item" role="presentation"><a id="m12" class="m text-light nav-link" href="#2022.05" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c12" type="button" role="tab" aria-controls="c12" aria-selected="false">2022.05</a></li>
+              <li class="nav-item" role="presentation"><a id="m11" class="m text-light nav-link" href="#2022.04" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c11" type="button" role="tab" aria-controls="c11" aria-selected="false">2022.04</a></li>
+              <li class="nav-item" role="presentation"><a id="m10" class="m text-light nav-link" href="#2022.03" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c10" type="button" role="tab" aria-controls="c10" aria-selected="false">2022.03</a></li>
+              <li class="nav-item" role="presentation"><a id="m9" class="m text-light nav-link" href="#2022.02" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c9" type="button" role="tab" aria-controls="c9" aria-selected="false">2022.02</a></li>
+              <li class="nav-item" role="presentation"><a id="m8" class="m text-light nav-link" href="#2022.01" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c8" type="button" role="tab" aria-controls="c8" aria-selected="false">2022.01</a></li>
             </ul>  
           </div>
           <!-- Months - 2021 -->
           <div id="m2021" class="y y2021 tab-pane" role="tabpanel" tabindex="0">
             <ul class="nav nav-outline nav-justified">
-              <li class="nav-item" role="presentation"><button id="m7" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c7" type="button" role="tab" aria-controls="c7" aria-selected="false">2021.12</button></li>
-              <li class="nav-item" role="presentation"><button id="m6" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c6" type="button" role="tab" aria-controls="c6" aria-selected="false">2021.11</button></li>
-              <li class="nav-item" role="presentation"><button id="m5" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c5" type="button" role="tab" aria-controls="c5" aria-selected="false">2021.10</button></li>
-              <li class="nav-item" role="presentation"><button id="m4" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c4" type="button" role="tab" aria-controls="c4" aria-selected="false">2021.09</button></li>
-              <li class="nav-item" role="presentation"><button id="m3" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c3" type="button" role="tab" aria-controls="c3" aria-selected="false">2021.08</button></li>
-              <li class="nav-item" role="presentation"><button id="m2" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c2" type="button" role="tab" aria-controls="c2" aria-selected="false">2021.07</button></li>
-              <li class="nav-item" role="presentation"><button id="m1" class="m text-light nav-link" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c1" type="button" role="tab" aria-controls="c1" aria-selected="false">2021.06</button></li>
+              <li class="nav-item" role="presentation"><a id="m7" class="m text-light nav-link" href="#2021.12" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c7" type="button" role="tab" aria-controls="c7" aria-selected="false">2021.12</a></li>
+              <li class="nav-item" role="presentation"><a id="m6" class="m text-light nav-link" href="#2021.11" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c6" type="button" role="tab" aria-controls="c6" aria-selected="false">2021.11</a></li>
+              <li class="nav-item" role="presentation"><a id="m5" class="m text-light nav-link" href="#2021.10" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c5" type="button" role="tab" aria-controls="c5" aria-selected="false">2021.10</a></li>
+              <li class="nav-item" role="presentation"><a id="m4" class="m text-light nav-link" href="#2021.09" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c4" type="button" role="tab" aria-controls="c4" aria-selected="false">2021.09</a></li>
+              <li class="nav-item" role="presentation"><a id="m3" class="m text-light nav-link" href="#2021.08" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c3" type="button" role="tab" aria-controls="c3" aria-selected="false">2021.08</a></li>
+              <li class="nav-item" role="presentation"><a id="m2" class="m text-light nav-link" href="#2021.07" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c2" type="button" role="tab" aria-controls="c2" aria-selected="false">2021.07</a></li>
+              <li class="nav-item" role="presentation"><a id="m1" class="m text-light nav-link" href="#2021.06" onclick="updateURL(this);" data-bs-toggle="pill" data-bs-target="#c1" type="button" role="tab" aria-controls="c1" aria-selected="false">2021.06</a></li>
             </ul>
           </div>
         </div>
       </div>
       <!-- CONTENTS -->
       <div class="tab-content">
+        <!-- Contents - 2023 -->
+        <div id="c2023" class="c y2023 tab-content">
+          <div id="c20" class="c tab-pane" role="tabpanel" tabindex="0">
+            <div class="text-bg-secondary">
+              <div class="d-flex justify-content-center pb-5">
+                <a class="display-3 fw-bold text-reset text-decoration-none lh-1" id="2023.01-title" href="#2023.01-title"><i class="bi bi-link-45deg text-light me-2"></i><span>January - 2023</span></a>
+              </div>
+              <div class="d-flex justify-content-center mb-5">
+                <img class="ratio ratio-21x9 notes_img" loading="lazy" src="/img/2023-01-a.jpg" alt="Cover Image" />
+              </div>
+              <div class="container p-3 pt-0 notes_container">
+                <div class="card-group text-center mx-auto" style="max-width: 54rem">
+                  <!-- Download -->
+                  <div id="2023.01-download" class="text-bg-dark rounded card m-1">
+                    <!-- Icon -->
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="#2023.01-download">
+                        <i class="bi bi-download text-light" style="font-size: 4rem;"></i>
+                      </a>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body pt-0">
+                      <h1 class="display-6 fw-bold text-reset text-decoration-none lh-1 mb-3">Get Armored</h1>
+                      <p class="card-text lead-dark">Start Armory today!</p>
+                      <div class="card-text d-grid gap-2 d-lg-flex justify-content-lg-center">
+                        <a class="fw-bold btn btn-danger align-items-center justify-content-center" href="/download#releases">
+                          <i class="bi bi-link-45deg text-white me-2"></i>Contribute
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Manual -->
+                  <div id="2023.01-manual" class="text-bg-dark rounded card m-1">
+                    <!-- Icon -->
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="#2023.01-manual">
+                        <i class="bi bi-book text-light" style="font-size: 4rem;"></i>
+                      </a>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body pt-0">
+                      <h1 class="display-6 fw-bold text-reset text-decoration-none lh-1 mb-3">Need info?</h1>
+                      <p class="card-text lead-dark">Learn more at the Armory wiki.</p>
+                      <div class="card-text d-grid gap-2 d-lg-flex justify-content-lg-center">
+                        <a class="fw-bold btn btn-danger align-items-center justify-content-center" href="https://github.com/armory3d/armory/wiki">
+                          <i class="bi bi-link-45deg text-white me-2"></i>Contribute
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center lead-dark p-5" id="2023.01-info">
+                  January is here with <span class="display-6 fw-semibold text-danger align-middle">****</span> new pull requests from some great <a class="fw-semibold text-reset" href="https://github.com/armory3d/armory/graphs/contributors">contributors</a> - great work!<br /><br />
+                </div>
+                <!-- HIGHLIGHTS -->
+                <a class="display-6 fw-bold text-reset text-decoration-none lh-1 mb-3" id="2023.01-highlights" href="#2023.01-highlights">
+                  <i class="bi bi-link-45deg text-light me-2"></i>HIGHLIGHTS
+                </a>
+                <hr />
+                <div class="lead-dark mb-3" id="2023.01-highlights_d">
+                  TODO
+                </div>
+                <!-- NEW -->
+                <a class="display-6 fw-bold text-reset text-decoration-none lh-1 mb-3" id="2023.01-new" href="#2023.01-new">
+                  <i class="bi bi-link-45deg text-light me-2"></i>NEW
+                </a>
+                <hr />
+                <div class="lead-dark mb-5" id="2023.01-new_d">
+                  TODO
+                </div>
+                <!-- BUG FIXES -->
+                <a class="display-6 fw-bold text-reset text-decoration-none lh-1 mb-3" id="2023.01-bug-fixes" href="#2023.01-bug-fixes">
+                  <i class="bi bi-link-45deg text-light me-2"></i>BUG FIXES
+                </a>
+                <hr />
+                <div class="lead-dark mb-5" id="2023.01-bug_fixes_d">
+                  TODO
+                </div>
+                <!-- OTHER CHANGES -->
+                <a class="display-6 fw-bold text-reset text-decoration-none lh-1 mb-3" id="2023.01-other-changes" href="#2023.01-other-changes">
+                  <i class="bi bi-link-45deg text-light me-2"></i>OTHER CHANGES
+                </a>
+                <hr />
+                <div class="lead-dark mb-5" id="2023.01-other_changes_d">
+                  TODO
+                </div>
+                <div class="card-group text-center mx-auto mb-lg-5" style="max-width: 27rem">
+                  <!-- Help -->
+                  <div id="2023.01-help" class="text-bg-dark rounded card">
+                    <!-- Icon -->
+                    <div class="d-flex justify-content-center align-items-center">
+                      <a href="#2023.01-help">
+                        <i class="bi bi-gift text-light" style="font-size: 4rem;"></i>
+                      </a>
+                    </div>
+                    <!-- Body -->
+                    <div class="card-body pt-0">
+                      <h1 class="display-6 fw-bold text-reset text-decoration-none lh-1 mb-3">Want to help?</h1>
+                      <p class="card-text lead-dark">Here's a few ways you can.</p>
+                      <div class="card-text d-grid gap-2 d-lg-flex justify-content-lg-center">
+                        <a class="fw-bold btn btn-danger align-items-center justify-content-center" href="/download#contribute">
+                          <i class="bi bi-link-45deg text-white me-2"></i>Contribute
+                        </a>
+                        <a class="fw-bold btn btn-danger align-items-center justify-content-center" href="/download#donate">
+                          <i class="bi bi-link-45deg text-white me-2"></i>Donate
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Contents - 2022 -->
         <div id="c2022" class="c y2022 tab-content">
           <div id="c19" class="c tab-pane" role="tabpanel" tabindex="0">
@@ -3010,7 +3132,7 @@
       </div>
     </main>
     <script>
-    var INIT_DATE = "2022.12";
+    var INIT_DATE = "2023.01";
     // Function - Set Year
     function setYear(y) {
       years = document.getElementsByClassName("y");
@@ -3076,7 +3198,9 @@
             for (var i=1; i <= Object.keys(JSON.parse(DATA)).length + 1; i++) {
               if (document.getElementById("m" + i) !== null && document.getElementById("c" + i) !== null) {
                 // Set Year
-                if (window.location.hash.includes("2022")) {
+                if (window.location.hash.includes("2023")) {
+                  setYear("2023");
+                } else if (window.location.hash.includes("2022")) {
                   setYear("2022");
                 } else if (window.location.hash.includes("2021")) {
                   setYear("2021");
